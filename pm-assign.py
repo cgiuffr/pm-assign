@@ -118,7 +118,7 @@ def save_csv(project, file, project_months, wps, wp_assignments=None):
         cell = ''
         for idx, assignment in enumerate(wp_assignments):
             if month in assignment:
-                cell = f'WP{wp["id"]}'
+                cell = f'WP{wps[idx]["id"]}'
                 break
         row.append(cell)
     csv_data.append(row)
